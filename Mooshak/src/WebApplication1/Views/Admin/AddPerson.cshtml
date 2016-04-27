@@ -1,0 +1,6 @@
+﻿@model Person
+@{
+    ViewBag.Title = "Add Person";
+}
+<h2> Add Person </h2>
+@Component.Invoke(nameof(PersonForm), Model)

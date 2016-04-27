@@ -41,5 +41,27 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        public IActionResult PersonOverview()
+        {
+            return View();
+        }
+
+        public IActionResult AddPerson()
+        {
+            Person c = new Person(); // { name = "", teachers = "", students = "", assignments = "" };
+            return View(c);
+        }
+
+        public IActionResult EditPerson()
+        {
+            Person c = new Person { name = "Hrabs", ssn = 7, email = "johanna@johanna.is", password = "hugrænt málskipunartré" };
+            return View(c);
+        }
+
+        public IActionResult DeletePerson()
+        {
+            return View();
+        }
     }
 }
