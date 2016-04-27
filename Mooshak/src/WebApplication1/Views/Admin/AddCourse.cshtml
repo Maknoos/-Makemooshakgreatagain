@@ -1,0 +1,6 @@
+﻿@model Course
+@{
+     ViewBag.Title = "AddCourse";
+}
+<h2> Add Course </h2>
+@Component.Invoke(nameof(CourseForm), Model)
