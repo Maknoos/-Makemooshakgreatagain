@@ -15,5 +15,20 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        public IActionResult AddProject()
+        {
+            return View();
+        }
+
+        public IActionResult EditProject()
+        {
+            return View();
+        }
+
+        public IActionResult DeleteProject()
+        {
+            return View();
+        }
     }
 }
