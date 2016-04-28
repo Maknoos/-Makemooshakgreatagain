@@ -7,6 +7,7 @@ namespace WebApplication1.Models
 {
     public class Student
     {
+        public int id { get; set; }
         List<ILookup<string, int>> grades;
         public int year { get; set; }
         public string degree { get; set; }

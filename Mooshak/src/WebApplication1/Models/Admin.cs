@@ -7,6 +7,6 @@ namespace WebApplication1.Models
 {
     public class Admin : Person
     {
-
+        public int id { get; set; }
     }
 }

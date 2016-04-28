@@ -7,6 +7,7 @@ namespace WebApplication1.Models
 {
     public class School
     {
+        public int id { get; set; }
         public string name { get; set; }
         public string headmasterName { get; set; }
         public List<Teacher> teachers;

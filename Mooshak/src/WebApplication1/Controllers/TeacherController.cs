@@ -31,8 +31,8 @@ namespace WebApplication1.Controllers
             {
 
                 Assignment newProject = new Assignment();
-                newProject.name = model.name;
-                newProject.value = model.value;
+                newProject.Title = model.Title;
+                newProject.Value = model.Value;
                 return RedirectToAction("Index");
             }
             return View(model);

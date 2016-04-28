@@ -17,6 +17,23 @@ namespace WebApplication1.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Assignment> Assignments { get; set; }
+        public DbSet<AssignmentMilestone> Milestones { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+
+        public ApplicationDbContext()
+            : base() //"DefaultConnection", throwIfV1Schema: false
+        {
+
+        }
+
+        public static ApplicationDbContext Create()
+        {
+            return new ApplicationDbContext();
+        }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
