@@ -1,4 +1,18 @@
-﻿
+﻿@model WebApplication1.Models.Assignment
+
 @{
     ViewBag.Title = "Edit Project";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    @Html.LabelFor(model => model.name)
+    @Html.EditorFor(model => model.name)
+    @Html.LabelFor(model => model.value)
+    @Html.EditorFor(model => model.value)
+    <input type="submit" value="Edit" />
 }
